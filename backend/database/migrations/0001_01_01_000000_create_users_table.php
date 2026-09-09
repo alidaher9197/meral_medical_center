@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('profile_image')->nullable();
+            $table->enum('status', ['pending','approved','rejected','blocked'])->default('approved');
+            $table->string('phone', 8)->unique();
             $table->rememberToken();
             $table->timestamps();
         });
