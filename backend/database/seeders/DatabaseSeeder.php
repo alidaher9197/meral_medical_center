@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+
 class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
@@ -17,8 +18,11 @@ class DatabaseSeeder extends Seeder
     {
         
         $this->call([
-        //RoleSeeder::class,
-        //SpecialtySeeder::class,
+        RoleSeeder::class,
+        SpecialtySeeder::class,
+        PhonePrefixSeeder::class,
+        PermissionSeeder::class,
+        UserSeeder::class,
     ]);
     }
 }

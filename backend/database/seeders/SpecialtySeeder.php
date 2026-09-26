@@ -33,6 +33,7 @@ class SpecialtySeeder extends Seeder
             'Dentistry',
             'ENT',
             'Rheumatology',
+            "Sports Medicine",
         ];
 
         foreach ($specialties as $specialty) {
